@@ -1,0 +1,23 @@
+{
+  "name": "agenion-landing-page",
+  "version": "0.0.1",
+  "description": "Landing page of the agenion project",
+  "main": "serve.js",
+  "scripts": {
+    "serve": "node serve.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fourcube/rossana-landing.git"
+  },
+  "author": "Niels Grieger, Chris Grieger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fourcube/rossana-landing/issues"
+  },
+  "homepage": "https://github.com/fourcube/rossana-landing#readme",
+  "devDependencies": {
+    "connect": "^3.7.0",
+    "serve-static": "^1.14.1"
+  }
+}
