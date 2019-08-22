@@ -28,7 +28,6 @@ TypewriterAnimation.prototype.animate = function() {
     this.period = 1500;
     this.text = ""
     this.el.css("animation", "animated-cursor 600ms ease-in-out infinite")
-    // this.el.css("max-width", "0")
   } else if (this.isReverting && this.text === "") {
     this.isReverting = false;
     this.currentLoop++;
