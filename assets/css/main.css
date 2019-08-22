@@ -4010,9 +4010,9 @@ input, select, textarea {
 		}
 
 		#banner h1 {
-			height: 85px;
+			height: 4.25rem;
 			max-width: 0;
-			line-height: 1.1;
+			line-height: 4.25rem;
 			transition: max-width 200ms linear;
 			display: inline-block;
 			overflow: hidden;
