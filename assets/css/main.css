@@ -3695,7 +3695,7 @@ input, select, textarea {
 
 		#header > .logo {
 			color: #ffffff;
-			font-size: 1.25rem;
+			font-size: 1.5rem;
 			font-weight: 600;
 			height: inherit;
 			line-height: inherit;
@@ -4007,6 +4007,23 @@ input, select, textarea {
 		#banner p {
 			font-size: 1.25rem;
 			margin: 0 0 0 0;
+		}
+
+		#banner h1 {
+			height: 85px;
+			max-width: 0;
+			line-height: 1.1;
+			transition: max-width 200ms linear;
+			display: inline-block;
+			overflow: hidden;
+			white-space: nowrap;
+			border-right: 5px solid #fff;
+			padding-right: 10px;
+		}
+		
+		@keyframes animated-cursor{
+			from{border-right-color: rgba(255,255,255,.75);}
+			to{border-right-color: rgba(255,255,255,0);}
 		}
 
 		@media screen and (max-width: 1280px) {
