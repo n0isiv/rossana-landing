@@ -4,7 +4,7 @@
   "description": "Landing page of the agenion project",
   "main": "serve.js",
   "scripts": {
-    "serve": "node serve.js"
+    "serve": "parcel index.html"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/fourcube/rossana-landing#readme",
   "devDependencies": {
-    "connect": "^3.7.0",
-    "serve-static": "^1.14.1"
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.10"
   }
 }

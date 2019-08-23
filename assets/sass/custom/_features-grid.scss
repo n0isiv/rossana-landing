@@ -1,0 +1,15 @@
+.features-grid {
+  &.special {
+    margin-top: calc(-13rem - 1px);
+    box-shadow: none;
+    background: none;
+    
+    .feature {
+      background: white;
+    }
+  }
+  .feature-wrapper {
+    margin: 10px;
+    box-shadow: 0px 25px 75px 0px rgba(0, 0, 0, 0.1);
+  }
+}

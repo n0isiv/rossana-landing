@@ -5,7 +5,6 @@
 */
 
 (function($) {
-
 	var	$window	= $(window),
 		$header = $('#header'),
 		$banner	= $('#banner'),
