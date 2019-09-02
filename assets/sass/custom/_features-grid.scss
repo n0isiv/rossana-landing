@@ -6,10 +6,18 @@
     
     .feature {
       background: white;
+      width: 100%;
     }
   }
   .feature-wrapper {
     margin: 10px;
+    width: 100%; 
     box-shadow: 0px 25px 75px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  @include breakpoint('>=large') {
+    .feature-wrapper {
+      flex-basis: calc(33% - 20px);
+    }
   }
 }
