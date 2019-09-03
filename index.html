@@ -1,253 +1,325 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Visualize by Pixelarity
 	pixelarity.com | hello@pixelarity.com
 	License: pixelarity.com/license
 -->
 <html>
-	<head>
-		<title>Untitled</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="assets/sass/main.scss">
-	</head>
-	<body class="is-preload">
+  <head>
+    <title>Untitled</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="assets/sass/main.scss" />
+  </head>
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header" class="alt">
+      <a class="logo" href="index.html"><span>AGENION</span></a>
+      <nav>
+        <a href="#menu"><span class="label">Menu</span></a>
+      </nav>
+    </header>
 
-		<!-- Header -->
-			<header id="header" class="alt">
-				<a class="logo" href="index.html">AGENION</span></a>
-				<nav>
-					<a href="#menu"><span class="label">Menu</span></a>
-				</nav>
-			</header>
+    <!-- Nav -->
+    <nav id="menu">
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="generic.html">Generic</a></li>
+        <li><a href="elements.html">Elements</a></li>
+      </ul>
+    </nav>
 
-		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">Generic</a></li>
-					<li><a href="elements.html">Elements</a></li>
-				</ul>
-			</nav>
+    <!-- Banner -->
+    <div id="banner">
+      <div class="wrapper style1">
+        <div class="inner">
+          <p>Automated data extraction for</p>
+          <h1
+            class="typewriter-animation"
+            data-rotate='["Invoices", "Tax Assesments", "Legal Documents"]'
+          ></h1>
+          <ul class="actions special">
+            <li>
+              <a href="#one" class="button large primary scrolly"
+                >Get your quote</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-		<!-- Banner -->
-			<div id="banner">
-				<div class="wrapper style1">
-					<div class="inner">
-						<p>Automated data extraction for</p>
-						<h1 class="typewriter-animation" data-rotate='["Invoices", "Tax Assesments", "Legal Documents"]'></h1>
-						<ul class="actions special">
-							<li><a href="#one" class="button large primary scrolly">Get your quote</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
+    <!-- Features Grid -->
+    <div id="one" class="features-grid special">
+      <div class="feature-wrapper">
+        <div class="feature">
+          <h2>1.</h2>
+          <h4>Submit documents</h4>
+          <p>Use our API or send us your paper.</p>
+        </div>
+      </div>
+      <div class="feature-wrapper">
+        <div class="feature">
+          <h2>2.</h2>
+          <h4>Let our AI do its magic</h4>
+          <p>We securly process your documents.</p>
+        </div>
+      </div>
+      <div class="feature-wrapper">
+        <div class="feature">
+          <h2>3.</h2>
+          <h4>Receive data</h4>
+          <p>Download your data or use one of our system integrations.</p>
+        </div>
+      </div>
+    </div>
 
-		<!-- Features Grid -->
-		<div id="one" class="features-grid special">
-			<div class="feature-wrapper">
-				<div class="feature">
-					<h2>1.</h2>
-					<h4>Submit documents</h4>
-					<p>Use our API or send us your paper.</p>
-				</div>
-			</div>
-			<div class="feature-wrapper">
-				<div class="feature">
-					<h2>2.</h2>
-					<h4>Let our AI do its magic</h4>
-					<p>We securly process your documents.</p>
-				</div>
-			</div>
-			<div class="feature-wrapper">
-				<div class="feature">
-					<h2>3.</h2>
-					<h4>Receive data</h4>
-					<p>Download your data or use one of our system integrations.</p>
-				</div>
-			</div>
-		</div>
+    <!-- Two -->
+    <div id="two">
+      <div class="wrapper special">
+        <div class="inner">
+          <header class="heading">
+            <h2>Product features</h2>
+            <!-- <p>Sed egestas, ante et vulputate volutpat semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida est. Sed lectus. Praesent elementum hendrerit tortor. Sed at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl.</p> -->
+          </header>
 
-		<!-- Two -->
-			<div id="two">
-				<div class="wrapper special">
-					<div class="inner">
-						<header class="heading">
-							<h2>Product features</h2>
-							<!-- <p>Sed egestas, ante et vulputate volutpat semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida est. Sed lectus. Praesent elementum hendrerit tortor. Sed at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl.</p> -->
-						</header>
+          <div id="one" class="features-grid">
+            <div class="feature">
+              <h4>Third-party integrations</h4>
+              <p>
+                Over 40 vendors supported. Custom integrations are also
+                possible.
+              </p>
+            </div>
+            <div class="feature">
+              <span class="icon solid fa-robot"></span>
+              <h4>Automated processing</h4>
+              <p>Documents are automatically processed upon receipt.</p>
+            </div>
+            <div class="feature">
+              <span class="icon solid fa-receipt"></span>
+              <h4>Transparent costs</h4>
+              <p>
+                Fair and transparent pricing. Bundle discounts are available.
+              </p>
+            </div>
+            <div class="feature">
+              <span class="icon solid fa-archive"></span>
+              <h4>Data archiving</h4>
+              <p>Optional long term storage for both paper and digital data.</p>
+            </div>
+            <div class="feature">
+              <span class="icon solid fa-check"></span>
+              <h4>GDPR conformity</h4>
+              <p>
+                GDPR compliant data processing and storage in Germany or
+                Switzerland.
+              </p>
+            </div>
+            <div class="feature">
+              <span class="icon solid fa-rocket"></span>
+              <h4>Unlimited scalability</h4>
+              <p>Flexible and automatic scaling for dynamic workloads.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="image major" data-position="center">
+        <img src="images/pic01.jpg" alt="" />
+      </div>
+    </div>
 
-						<div id="one" class="features-grid">
-							<div class="feature">
-								<h4>Third-party integrations</h4>
-								<p>Over 40 vendors supported. Custom integrations are also possible.</p>
-							</div>
-							<div class="feature">
-								<span class="icon solid fa-robot"></span>
-								<h4>Automated processing</h4>
-								<p>Documents are automatically processed upon receipt.</p>
-							</div>
-							<div class="feature">
-								<span class="icon solid fa-receipt"></span>
-								<h4>Transparent costs</h4>
-								<p>Fair and transparent pricing. Bundle discounts are available.</p>
-							</div>
-							<div class="feature">
-								<span class="icon solid fa-archive"></span>
-								<h4>Data archiving</h4>
-								<p>Optional long term storage for both paper and digital data.</p>
-							</div>
-							<div class="feature">
-								<span class="icon solid fa-check"></span>
-								<h4>GDPR conformity</h4>
-								<p>GDPR compliant data processing and storage in Germany or Switzerland.</p>
-							</div>
-							<div class="feature">
-								<span class="icon solid fa-rocket"></span>
-								<h4>Unlimited scalability</h4>
-								<p>Flexible and automatic scaling for dynamic workloads.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="image major" data-position="center">
-					<img src="images/pic01.jpg" alt="" />
-				</div>
-			</div>
+    <!-- Four -->
+    <div id="four">
+      <div class="wrapper style2">
+        <div class="inner">
+          <header class="heading">
+            <h2>Feature Details</h2>
+            <p>
+              Agenions technology and features are tuned to fit even the most
+              ambitious document processing needs.
+            </p>
+          </header>
+          <div class="spotlights">
+            <div class="spotlight">
+              <div class="image fit">
+                <img src="images/pic02.jpg" alt="" />
+              </div>
+              <div class="content">
+                <h3>Third-party integrations</h3>
+                <p>Agenion integrates with</p>
+                <ul>
+                  <li>SAP</li>
+                  <li>Sage ERP</li>
+                  <li>Outright</li>
+                  <li>NetSuite</li>
+                  <li>Microsoft Dynamics</li>
+                </ul>
+                <p>New integrations are created on-demand.</p>
+              </div>
+            </div>
+            <div class="spotlight">
+              <div class="image fit alt">
+                <img src="images/pic03.jpg" alt="" />
+              </div>
+              <div class="content">
+                <h3>Automated processing</h3>
+                <p>
+                  Submit documents via our web-interface, REST or SOAP APIs.
+                  Received documents are automatically processed. Processing
+                  results can be retrieved via
+                </p>
+                <ul>
+                  <li>(s)FTP</li>
+                  <li>Webhooks</li>
+                  <li>API</li>
+                  <li>and more...</li>
+                </ul>
+                <p>We also offer shipment of physical media.</p>
+              </div>
+            </div>
+            <div class="spotlight">
+              <div class="image fit">
+                <img src="images/pic03.jpg" alt="" />
+              </div>
+              <div class="content">
+                <h3>Data formats</h3>
+                <p>
+                  Processing results can be stored as JSON, XML, CSV, TSV and
+                  XRechnung 1.0.
+                </p>
+                <p>Custom serialization available on demand.</p>
+              </div>
+            </div>
+            <div class="spotlight">
+              <div class="image fit alt">
+                <img src="images/pic04.jpg" alt="" />
+              </div>
+              <div class="content">
+                <h3>Transparent costs</h3>
+                <p>
+                  Agenion transparently charges per document processed. A quota
+                  allows you to keep track of your costs and scale Agenion to
+                  your available budget.
+                </p>
+                <p>
+                  <strong
+                    >We offer discounted bundles for recurring
+                    workloads.</strong
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="spotlight">
+              <div class="image fit">
+                <img src="images/pic02.jpg" alt="" />
+              </div>
+              <div class="content">
+                <h3>Data archiving</h3>
+                <p>
+                  We store your digital data safely. Choose from multiple
+                  storage schemes fit for various durations and redundancy
+                  requirements. Agenion also offers storage for physical
+                  documents.
+                </p>
+              </div>
+            </div>
+            <div class="spotlight">
+              <div class="image fit alt">
+                <img src="images/pic02.jpg" alt="" />
+              </div>
+              <div class="content">
+                <h3>GDRP conformity</h3>
+                <p>
+                  All data is stored on encrypted volumes inside our Frankfurt
+                  and Zermatt data-centers.
+                </p>
+              </div>
+            </div>
+            <div class="spotlight">
+              <div class="image fit">
+                <img src="images/pic03.jpg" alt="" />
+              </div>
+              <div class="content">
+                <h3>Flexible scalability</h3>
+                <p>
+                  Our infrastructure can automatically adapt to your processing
+                  requirements, aiming for a perfect balance between performance
+                  and cost.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<!-- Four -->
-			<div id="four">
-				<div class="wrapper style2">
-					<div class="inner">
-						<header class="heading">
-							<h2>Feature Details</h2>
-							<p>Agenions technology and features are tuned to fit even the most ambitious document processing needs.</p>
-						</header>
-						<div class="spotlights">
-							<div class="spotlight">
-								<div class="image fit">
-									<img src="images/pic02.jpg" alt="" />
-								</div>
-								<div class="content">
-									<h3>Third-party integrations</h3>
-									<p>Agenion integrates with</p>
-									<ul>
-										<li>SAP</li>
-										<li>Sage ERP</li>
-										<li>Outright</li>
-										<li>NetSuite</li>
-										<li>Microsoft Dynamics</li>
-									</ul>
-									<p>New integrations are created on-demand.</p>
-								</div>
-							</div>
-							<div class="spotlight">
-								<div class="image fit alt">
-									<img src="images/pic03.jpg" alt="" />
-								</div>
-								<div class="content">
-									<h3>Automated processing</h3>
-									<p>Submit documents via our web-interface, REST or SOAP APIs. Received documents are automatically processed. Processing results can be retrieved via</p>
-									<ul>
-										<li>(s)FTP</li>
-										<li>Webhooks</li>
-										<li>API</li>
-										<li>and more...</li>
-									</ul>
-									<p>We also offer shipment of physical media.</p>
-								</div>
-							</div>
-							<div class="spotlight">
-								<div class="image fit">
-									<img src="images/pic03.jpg" alt="" />
-								</div>
-								<div class="content">
-									<h3>Data formats</h3>
-									<p>Processing results can be stored as JSON, XML, CSV, TSV and XRechnung 1.0.</p> <p>Custom serialization available on demand.</p>
-								</div>
-							</div>
-							<div class="spotlight">
-								<div class="image fit alt">
-									<img src="images/pic04.jpg" alt="" />
-								</div>
-								<div class="content">
-									<h3>Transparent costs</h3>
-									<p>Agenion transparently charges per document processed. A quota allows you to keep track of your costs and scale Agenion to your available budget.</p>
-									<p><strong>We offer discounted bundles for recurring workloads.</strong></p>
-								</div>
-							</div>
-							<div class="spotlight">
-								<div class="image fit">
-									<img src="images/pic02.jpg" alt="" />
-								</div>
-								<div class="content">
-									<h3>Data archiving</h3>
-									<p>We store your digital data safely. Choose from multiple storage schemes fit for various durations and redundancy requirements. Agenion also offers storage for physical documents.</p>
-								</div>
-							</div>
-							<div class="spotlight">
-								<div class="image fit alt">
-									<img src="images/pic02.jpg" alt="" />
-								</div>
-								<div class="content">
-									<h3>GDRP conformity</h3>
-									<p>
-										All data is stored on encrypted volumes inside our Frankfurt and Zermatt data-centers.
-									</p>
-								</div>
-							</div>
-							<div class="spotlight">
-								<div class="image fit">
-									<img src="images/pic03.jpg" alt="" />
-								</div>
-								<div class="content">
-									<h3>Flexible scalability</h3>
-									<p>Our infrastructure can automatically adapt to your processing requirements, aiming for a perfect balance between performance and cost.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+    <!-- CTA -->
+    <div id="cta">
+      <div class="wrapper style1">
+        <div class="inner">
+          <header class="heading small">
+            <h2>Get your quote</h2>
+          </header>
 
-		<!-- CTA -->
-			<div id="cta">
-				<div class="wrapper style1">
-					<div class="inner">
-						<header class="heading small">
-							<h2>Sed lacus felis</h2>
-							<p>Magna etiam commodo quis, gravida est. Sed lectus. Praesent elementum hendrerit tortor. Sed at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien.</p>
-						</header>
-						<form method="post" action="#" class="combined">
-							<input type="email" name="email" id="email" placeholder="Your email address" class="invert" />
-							<input type="submit" class="special" value="Get Notified" />
-						</form>
-					</div>
-				</div>
-			</div>
+          <form method="post" action="#" class="combined">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email address"
+              class="invert"
+            />
+            <input type="submit" class="special" value="Get Notified" />
+          </form>
+        </div>
+      </div>
+    </div>
 
-		<!-- Footer -->
-			<div id="footer">
-				<div class="wrapper">
-					<div class="inner">
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-						<div class="copyright">
-							&copy; Untitled Corp. All rights reserved.
-						</div>
-					</div>
-				</div>
-			</div>
+    <!-- Footer -->
+    <div id="footer">
+      <div class="wrapper">
+        <div class="inner">
+          <ul class="icons">
+            <li>
+              <a href="#" class="icon brands fa-twitter"
+                ><span class="label">Twitter</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="icon brands fa-instagram"
+                ><span class="label">Instagram</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="icon brands fa-facebook-f"
+                ><span class="label">Facebook</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="icon brands fa-pinterest"
+                ><span class="label">Pinterest</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="icon solid fa-envelope"
+                ><span class="label">Email</span></a
+              >
+            </li>
+          </ul>
+          <div class="copyright">
+            &copy; Untitled Corp. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<!-- Scripts -->
-		<script src="src/index.js"></script>
-
-	</body>
+    <!-- Scripts -->
+    <script src="src/index.js"></script>
+  </body>
 </html>
