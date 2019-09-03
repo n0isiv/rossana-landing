@@ -267,15 +267,37 @@
             <h2>Get your quote</h2>
           </header>
 
-          <form method="post" action="#" class="combined">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Your email address"
-              class="invert"
-            />
-            <input type="submit" class="special" value="Get Notified" />
+          <form method="post" action="#">
+            <div class="row gtr-uniform">
+							<div class="col-6 col-12-xsmall">
+								<input type="text" name="first-name" id="first-name" placeholder="First name">
+							</div>
+							<div class="col-6 col-12-xsmall">
+								<input type="text" name="last-name" id="last-name" placeholder="Last name">
+							</div>
+							<div class="col-12">
+								<input type="text" name="company-name" id="company-name" placeholder="Company name">
+							</div>
+							<div class="col-6 col-12-xsmall">
+								<input type="text" name="data-format-input" id="data-format-input" placeholder="Data format (input)">
+							</div>
+							<div class="col-6 col-12-xsmall">
+								<input type="text" name="data-format-output" id="data-format-output" placeholder="Data format (output)">
+							</div>
+							<div class="col-6 col-12-xsmall">
+								<input type="text" name="integration" id="integration" placeholder="Integration">
+							</div>
+							<div class="col-6 col-12-xsmall">
+								<input type="text" name="expected-volume" id="expected-volume" placeholder="Expected volume">
+							</div>
+							<div class="col-12">
+								<ul class="actions">
+									<li>
+										<input type="submit" value="Submit" class="primary">
+									</li>
+								</ul>
+							</div>
+						</div>
           </form>
         </div>
       </div>
