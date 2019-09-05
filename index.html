@@ -344,37 +344,49 @@
             <div class="group" data-step="2">
               <div class="row gtr-uniform">
                 <div class="col-6 col-12-xsmall">
-                  <select name="data-format-input">
-                    <option value="" hidden>Input data format</option>
-                    <option value="pdf">PDF</option>
-                    <option value="image">Image (jpeg, png, ...)</option>
-                    <option value="paper">Paper</option>
-                    <option value="other">Other</option>
-                  </select>
+                  <div class="row gtr-uniform">
+                    <div class="col-12">
+                      <select name="data-format-input" id="data-format-input">
+                        <option value="" hidden>Input data format</option>
+                        <option value="pdf">PDF</option>
+                        <option value="image">Image (jpeg, png, ...)</option>
+                        <option value="paper">Paper</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <input
+                        type="text"
+                        name="data-format-input-other"
+                        placeholder="Data format"
+                        data-rel="data-format-input"
+                        data-visible-when="other"
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="col-6 col-12-xsmall">
-                  <select name="data-source">
-                    <option value="" hidden>Data Source</option>
-                    <option value="web">Web Interface</option>
-                    <option value="ftp">(s)FTP</option>
-                    <option value="webhooks">Webhooks</option>
-                    <option value="api">API</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                <div class="col-6 col-12-xsmall">
-                  <input
-                    type="text"
-                    name="data-format-input-other"
-                    placeholder="Custom data format"
-                  />
-                </div>
-                <div class="col-6 col-12-xsmall">
-                  <input
-                    type="text"
-                    name="data-source-other"
-                    placeholder="Custom data source"
-                  />
+                  <div class="row gtr-uniform">
+                    <div class="col-12">
+                      <select name="data-source" id="data-source">
+                        <option value="" hidden>Data Source</option>
+                        <option value="web">Web Interface</option>
+                        <option value="ftp">(s)FTP</option>
+                        <option value="webhooks">Webhooks</option>
+                        <option value="api">API</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <input
+                        type="text"
+                        name="data-source-other"
+                        placeholder="Data source"
+                        data-rel="data-source"
+                        data-visible-when="other"
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="col-12">
                   <ul class="actions">
@@ -392,45 +404,60 @@
             <div class="group" data-step="3">
               <div class="row gtr-uniform">
                 <div class="col-6 col-12-xsmall">
-                  <select name="data-format-output">
-                    <option value="" hidden>Output data format</option>
-                    <option value="json">JSON</option>
-                    <option value="xml">XML</option>
-                    <option value="csv">CSV</option>
-                    <option value="tsv">TSV</option>
-                    <option value="x-rechnung">XRechnung</option>
-                    <option value="integration">Third-Party integration</option>
-                    <option value="physical">Physical media</option>
-                    <option value="other">Other</option>
-                  </select>
+                  <div class="row gtr-uniform">
+                    <div class="col-12">
+                      <select name="data-format-output" id="data-format-output">
+                        <option value="" hidden>Output data format</option>
+                        <option value="json">JSON</option>
+                        <option value="xml">XML</option>
+                        <option value="csv">CSV</option>
+                        <option value="tsv">TSV</option>
+                        <option value="x-rechnung">XRechnung</option>
+                        <option value="integration"
+                          >Third-Party integration</option
+                        >
+                        <option value="physical">Physical media</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <input
+                        type="text"
+                        name="data-format-output-other"
+                        placeholder="Data format"
+                        data-rel="data-format-output"
+                        data-visible-when="other"
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="col-6 col-12-xsmall">
-                  <select name="integration">
-                    <option value="" hidden>Integration</option>
-                    <option value="sap">SAP</option>
-                    <option value="sage">Sage ERP</option>
-                    <option value="outright">Outright</option>
-                    <option value="netsuite">NetSuite</option>
-                    <option value="microsoft-dynamics"
-                      >Microsoft Dynamics</option
-                    >
-                    <option value="other">Other</option>
-                  </select>
+                  <div class="row gtr-uniform">
+                    <div class="col-12">
+                      <select name="integration" id="integration">
+                        <option value="" hidden>Integration</option>
+                        <option value="sap">SAP</option>
+                        <option value="sage">Sage ERP</option>
+                        <option value="outright">Outright</option>
+                        <option value="netsuite">NetSuite</option>
+                        <option value="microsoft-dynamics"
+                          >Microsoft Dynamics</option
+                        >
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <input
+                        type="text"
+                        name="integration-other"
+                        placeholder="Integration name"
+                        data-rel="integration"
+                        data-visible-when="other"
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div class="col-6 col-12-xsmall">
-                  <input
-                    type="text"
-                    name="data-format-output-other"
-                    placeholder="Custom data format"
-                  />
-                </div>
-                <div class="col-6 col-12-xsmall">
-                  <input
-                    type="text"
-                    name="integration-other"
-                    placeholder="Custom integration"
-                  />
-                </div>
+
                 <div class="col-12">
                   <ul class="actions">
                     <li>
