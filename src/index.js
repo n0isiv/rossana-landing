@@ -7,6 +7,7 @@ window.breakpoints = require('../assets/js/breakpoints.min.js')
 require('../assets/js/util.js')
 require('../assets/js/main.js')
 require('../assets/js/typewriter.js')
+require('../assets/js/multi-step-form.js')
 
 
 

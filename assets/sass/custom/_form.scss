@@ -31,4 +31,16 @@ form {
       margin-bottom: 0;
     }
   }
+
+  .group {
+    display: none;
+
+    .actions {
+      @include vendor("justify-content", "space-between");
+    }
+  }
+
+  .group--active {
+    display: block;
+  }
 }
