@@ -9,11 +9,11 @@
     this.initFieldEvents();
     this.updateFieldVisibility();
   };
-  
+
   MultiStepForm.prototype.initButtonEvents = function() {
     var $nextButtons = this.$form.find('a[data-next=""]');
-    var $previousButtons = this.$form.find('a[data-previous=""]')
-  
+    var $previousButtons = this.$form.find('a[data-previous=""]');
+
     $nextButtons.on("click", this.showNextGroup.bind(this));
     $previousButtons.on("click", this.showPreviousGroup.bind(this));
   };
@@ -21,30 +21,30 @@
   MultiStepForm.prototype.initFieldEvents = function() {
     var $fields = this.$form.find("input, select, textarea");
 
-    $fields.change(this.updateFieldVisibility.bind(this))
+    $fields.change(this.updateFieldVisibility.bind(this));
   };
-  
+
   MultiStepForm.prototype.showNextGroup = function() {
     this.$activeGroup.removeClass("group--active");
-  
+
     this.currentStep += 1;
     this.$activeGroup = $(this.$groups[this.currentStep - 1]);
-    
+
     var activeStep = $(this.$steps[this.currentStep - 1]);
     activeStep.addClass("step--completed");
-  
+
     this.$activeGroup.addClass("group--active");
   };
 
   MultiStepForm.prototype.showPreviousGroup = function() {
     this.$activeGroup.removeClass("group--active");
-  
+
     this.currentStep -= 1;
     this.$activeGroup = $(this.$groups[this.currentStep - 1]);
-    
+
     var activeStep = $(this.$steps[this.currentStep]);
     activeStep.removeClass("step--completed");
-  
+
     this.$activeGroup.addClass("group--active");
   };
 
@@ -62,7 +62,7 @@
         $field.hide();
       }
     }
-  }
+  };
 
   var $window = $(window);
   var $forms = $(".multi-step-form");
