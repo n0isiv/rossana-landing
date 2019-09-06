@@ -19,8 +19,28 @@
       rel="stylesheet"
       href="node_modules/cookieconsent/build/cookieconsent.min.css"
     />
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MPBPVWW");
+    </script>
   </head>
   <body class="is-preload">
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MPBPVWW"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
     <!-- Header -->
     <header id="header" class="alt">
       <a class="logo" href="index.html"><span>AGENION</span></a>
@@ -49,7 +69,7 @@
           ></h1>
           <ul class="actions special">
             <li>
-              <a href="#one" class="button large primary scrolly"
+              <a id="form-link" href="#one" class="button large primary scrolly"
                 >Get your quote</a
               >
             </li>
@@ -59,7 +79,7 @@
     </div>
 
     <!-- Features Grid -->
-    <div id="one" class="features-grid special">
+    <div id="step-boxes" class="features-grid special">
       <div class="feature-wrapper">
         <div class="feature">
           <h2>1.</h2>
@@ -83,8 +103,8 @@
       </div>
     </div>
 
-    <!-- Two -->
-    <div id="two">
+    <!-- Features -->
+    <div id="features">
       <div class="wrapper special">
         <div class="inner">
           <header class="heading">
@@ -138,8 +158,8 @@
       </div>
     </div>
 
-    <!-- Four -->
-    <div id="four">
+    <!-- Feature Details -->
+    <div id="feature-details">
       <div class="wrapper style2">
         <div class="inner">
           <header class="heading">
@@ -338,7 +358,7 @@
                   <ul class="actions">
                     <li></li>
                     <li>
-                      <a class="button primary" data-next>Next step</a>
+                      <a id="form-step-next-2" class="button primary" data-next>Next step</a>
                     </li>
                   </ul>
                 </div>
@@ -395,10 +415,10 @@
                 <div class="col-12">
                   <ul class="actions">
                     <li>
-                      <a class="button primary" data-previous>Previous step</a>
+                      <a id="form-step-previous-1" class="button primary" data-previous>Previous step</a>
                     </li>
                     <li>
-                      <a class="button primary" data-next>Next step</a>
+                      <a id="form-step-next-3" class="button primary" data-next>Next step</a>
                     </li>
                   </ul>
                 </div>
@@ -465,10 +485,10 @@
                 <div class="col-12">
                   <ul class="actions">
                     <li>
-                      <a class="button primary" data-previous>Previous step</a>
+                      <a  id="form-step-previous-2" class="button primary" data-previous>Previous step</a>
                     </li>
                     <li>
-                      <a class="button primary" data-next>Next step</a>
+                      <a id="form-step-next-4" class="button primary" data-next>Next step</a>
                     </li>
                   </ul>
                 </div>
@@ -491,7 +511,7 @@
                 <div class="col-12">
                   <ul class="actions">
                     <li>
-                      <a class="button primary" data-previous>Previous step</a>
+                      <a id="form-step-previous-3" class="button primary" data-previous>Previous step</a>
                     </li>
                     <li>
                       <input type="submit" value="Submit" class="primary" />
