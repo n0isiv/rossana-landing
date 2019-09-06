@@ -8,6 +8,7 @@ require('../assets/js/util.js')
 require('../assets/js/main.js')
 require('../assets/js/typewriter.js')
 require('../assets/js/multi-step-form.js')
+require('../assets/js/cookieconsent.js')
 
 
 
