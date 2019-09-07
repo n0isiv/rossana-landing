@@ -57,9 +57,9 @@
       var expextedValue = $field.data("visible-when");
 
       if ($depedency.val() == expextedValue) {
-        $field.show();
+        $field.parent().show();
       } else {
-        $field.hide();
+        $field.parent().hide();
       }
     }
   };
