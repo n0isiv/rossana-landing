@@ -27,7 +27,7 @@
   MultiStepForm.prototype.showNextGroup = function() {
     if (!this.checkFormGroupValidity()) {
       // use click instead of submit to trigger browser form validation
-      $("input[type=\"submit\"]").trigger("click");
+      $('input[type="submit"]').trigger("click");
       return;
     }
     this.$activeGroup.removeClass("group--active");
@@ -54,7 +54,9 @@
   };
 
   MultiStepForm.prototype.checkFormGroupValidity = function() {
-    var $groupInputs = this.$activeGroup.find("input[required],select[required]");
+    var $groupInputs = this.$activeGroup.find(
+      "input[required],select[required]"
+    );
 
     for (var i = 0; i < $groupInputs.length; i++) {
       var $field = $groupInputs[i];
@@ -67,7 +69,7 @@
     }
 
     return true;
-  }
+  };
 
   MultiStepForm.prototype.updateFieldVisibility = function() {
     var $relationalFields = this.$form.find("[data-rel]");
