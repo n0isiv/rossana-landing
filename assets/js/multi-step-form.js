@@ -25,6 +25,11 @@
   };
 
   MultiStepForm.prototype.showNextGroup = function() {
+    if (!this.checkFormGroupValidity()) {
+      // use click instead of submit to trigger browser form validation
+      $("input[type=\"submit\"]").trigger("click");
+      return;
+    }
     this.$activeGroup.removeClass("group--active");
 
     this.currentStep += 1;
@@ -48,6 +53,22 @@
     this.$activeGroup.addClass("group--active");
   };
 
+  MultiStepForm.prototype.checkFormGroupValidity = function() {
+    var $groupInputs = this.$activeGroup.find("input[required],select[required]");
+
+    for (var i = 0; i < $groupInputs.length; i++) {
+      var $field = $groupInputs[i];
+
+      if (!$field.checkValidity()) {
+        // focus invalid field
+        $field.focus();
+        return false;
+      }
+    }
+
+    return true;
+  }
+
   MultiStepForm.prototype.updateFieldVisibility = function() {
     var $relationalFields = this.$form.find("[data-rel]");
 
@@ -55,10 +76,15 @@
       var $field = $($relationalFields[i]);
       var $depedency = $("#" + $field.data("rel"));
       var expextedValue = $field.data("visible-when");
+      var required = $field.data("required");
 
       if ($depedency.val() == expextedValue) {
+        if (required === true) {
+          $field.attr("required", "true");
+        }
         $field.parent().show();
       } else {
+        $field.removeAttr("required");
         $field.parent().hide();
       }
     }
