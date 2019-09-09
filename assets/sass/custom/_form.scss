@@ -1,4 +1,8 @@
 form {
+  &.multi-step-form--hidden {
+    display: none;
+  }
+
   .steps {
     @include vendor("display", "flex");
     @include vendor("justify-content", "space-around");

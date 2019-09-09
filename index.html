@@ -69,9 +69,12 @@
           ></h1>
           <ul class="actions special">
             <li>
-              <a id="form-link" href="#one" class="button large primary scrolly"
-                >Get your quote</a
-              >
+              <a
+                id="form-link"
+                href="#quote"
+                class="button large primary scrolly quote-button">
+                Get your quote
+              </a>
             </li>
           </ul>
         </div>
@@ -283,15 +286,26 @@
       </div>
     </div>
 
-    <!-- CTA -->
-    <div id="cta">
+    <!-- quote -->
+    <div id="quote">
       <div class="wrapper style1">
         <div class="inner">
           <header class="heading small">
-            <h2>Get your quote</h2>
+            <h2>Sign up</h2>
           </header>
 
-          <form class="multi-step-form" method="post" action="#">
+          <ul class="actions actions--center">
+            <li>
+              <button class="button large special quote-button" data-hide-after-click="true">Get your quote</button>
+            </li>
+          </ul>
+
+          <form
+            id="quote-form"
+            class="multi-step-form multi-step-form--hidden"
+            method="post"
+            action="#"
+          >
             <div class="steps">
               <div class="step step--completed" data-step="1">
                 <p class="step-number">1</p>
