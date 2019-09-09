@@ -341,6 +341,7 @@
                     name="first-name"
                     id="first-name"
                     placeholder="First name"
+                    required
                   />
                 </div>
                 <div class="col-6 col-12-xsmall">
@@ -349,6 +350,7 @@
                     name="last-name"
                     id="last-name"
                     placeholder="Last name"
+                    required
                   />
                 </div>
                 <div class="col-6 col-12-xsmall">
@@ -365,6 +367,7 @@
                     name="email"
                     id="email"
                     placeholder="Email address"
+                    required
                   />
                 </div>
 
@@ -386,7 +389,7 @@
                 <div class="col-6 col-12-xsmall">
                   <div class="row gtr-uniform">
                     <div class="col-12">
-                      <select name="data-format-input" id="data-format-input">
+                      <select name="data-format-input" id="data-format-input" required>
                         <option value="" hidden>Input data format</option>
                         <option value="pdf">PDF</option>
                         <option value="image">Image (jpeg, png, ...)</option>
@@ -401,6 +404,7 @@
                         placeholder="Data format"
                         data-rel="data-format-input"
                         data-visible-when="other"
+                        data-required="true"
                       />
                     </div>
                   </div>
@@ -453,7 +457,7 @@
                 <div class="col-6 col-12-xsmall">
                   <div class="row gtr-uniform">
                     <div class="col-12">
-                      <select name="data-format-output" id="data-format-output">
+                      <select name="data-format-output" id="data-format-output" required>
                         <option value="" hidden>Output data format</option>
                         <option value="json">JSON</option>
                         <option value="xml">XML</option>
@@ -474,6 +478,7 @@
                         placeholder="Data format"
                         data-rel="data-format-output"
                         data-visible-when="other"
+                        data-required="true"
                       />
                     </div>
                   </div>
@@ -500,6 +505,7 @@
                         placeholder="Integration name"
                         data-rel="integration"
                         data-visible-when="other"
+                        data-required="true"
                       />
                     </div>
                   </div>
@@ -528,7 +534,7 @@
             <div class="group" data-step="4">
               <div class="row gtr-uniform">
                 <div class="col-6 col-12-xsmall">
-                  <select name="expected-volume">
+                  <select name="expected-volume" required>
                     <option value="" hidden>Expected volume</option>
                     <option value="0-1000">0-1,000</option>
                     <option value="1000-5000">1,000-5,000</option>
