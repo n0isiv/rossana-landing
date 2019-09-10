@@ -35,8 +35,10 @@
     this.currentStep += 1;
     this.$activeGroup = $(this.$groups[this.currentStep - 1]);
 
-    var activeStep = $(this.$steps[this.currentStep - 1]);
-    activeStep.addClass("step--completed");
+    var activeStep = this.$steps[this.currentStep - 1];
+    if (activeStep != undefined) {
+      $(activeStep).addClass("step--completed");
+    }
 
     this.$activeGroup.addClass("group--active");
   };
