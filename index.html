@@ -316,30 +316,210 @@
               <div class="step step--completed" data-step="1">
                 <p class="step-number">1</p>
                 <p class="step-description">
-                  Contact
+                  Input
                 </p>
               </div>
               <div class="step" data-step="2">
                 <p class="step-number">2</p>
                 <p class="step-description">
-                  Input
+                  Output
                 </p>
               </div>
               <div class="step" data-step="3">
                 <p class="step-number">3</p>
                 <p class="step-description">
-                  Output
+                  Volume
                 </p>
               </div>
               <div class="step" data-step="4">
                 <p class="step-number">4</p>
                 <p class="step-description">
-                  Volume
+                  Contact
                 </p>
               </div>
             </div>
 
-            <div class="group group--active" data-step="1">
+            <div class="group" data-step="1">
+              <div class="row gtr-uniform">
+                <div class="col-6 col-12-xsmall">
+                  <div class="row gtr-uniform">
+                    <div class="col-12">
+                      <select
+                        name="data-format-input"
+                        id="data-format-input"
+                        required
+                      >
+                        <option value="" hidden>In which format is your data?</option>
+                        <option value="pdf">PDF</option>
+                        <option value="image">Image (jpeg, png, ...)</option>
+                        <option value="paper">Paper</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <input
+                        type="text"
+                        name="data-format-input-other"
+                        placeholder="Please describe your data format"
+                        data-rel="data-format-input"
+                        data-visible-when="other"
+                        data-required="true"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-12-xsmall">
+                  <div class="row gtr-uniform">
+                    <div class="col-12">
+                      <select name="data-source" id="data-source">
+                        <option value="" hidden>How will you transmit the documents?</option>
+                        <option value="web">Web Interface</option>
+                        <option value="ftp">(s)FTP</option>
+                        <option value="webhooks">Webhooks</option>
+                        <option value="api">API</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <input
+                        type="text"
+                        name="data-source-other"
+                        placeholder="Please describe your data source"
+                        data-rel="data-source"
+                        data-visible-when="other"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <ul class="actions">
+                    <li>
+                      <a id="form-step-next-3" class="button primary" data-next
+                        >Next step</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="group" data-step="2">
+              <div class="row gtr-uniform">
+                <div class="col-6 col-12-xsmall">
+                  <div class="row gtr-uniform">
+                    <div class="col-12">
+                      <select
+                        name="data-format-output"
+                        id="data-format-output"
+                        required
+                      >
+                        <option value="" hidden>In which format do you want to receive your data?</option>
+                        <option value="json">JSON</option>
+                        <option value="xml">XML</option>
+                        <option value="csv">CSV</option>
+                        <option value="tsv">TSV</option>
+                        <option value="x-rechnung">XRechnung</option>
+                        <option value="integration"
+                          >Third-Party integration</option
+                        >
+                        <option value="physical">Physical media</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <input
+                        type="text"
+                        name="data-format-output-other"
+                        placeholder="Please describe your output format"
+                        data-rel="data-format-output"
+                        data-visible-when="other"
+                        data-required="true"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-12-xsmall">
+                  <div class="row gtr-uniform">
+                    <div class="col-12">
+                      <select name="integration" id="integration">
+                        <option value="" hidden>How do you want to receive the documents?</option>
+                        <option value="sap">SAP</option>
+                        <option value="sage">Sage ERP</option>
+                        <option value="outright">Outright</option>
+                        <option value="netsuite">NetSuite</option>
+                        <option value="microsoft-dynamics"
+                          >Microsoft Dynamics</option
+                        >
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <input
+                        type="text"
+                        name="integration-other"
+                        placeholder="Integration name"
+                        data-rel="integration"
+                        data-visible-when="other"
+                        data-required="true"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <ul class="actions">
+                    <li>
+                      <a
+                        id="form-step-previous-1"
+                        class="button primary"
+                        data-previous
+                        >Previous step</a
+                      >
+                    </li>
+                    <li>
+                      <a id="form-step-next-3" class="button primary" data-next
+                        >Next step</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="group" data-step="3">
+              <div class="row gtr-uniform">
+                <div class="col-6 col-12-xsmall">
+                  <select name="expected-volume" required>
+                    <option value="" hidden>How many documents do you want to process per month?</option>
+                    <option value="0-1000">0-1,000</option>
+                    <option value="1000-5000">1,000-5,000</option>
+                    <option value="5000-15000">5,000-15,000</option>
+                    <option value="15000">> 15,000</option>
+                    <option value="unsure">Not sure</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <ul class="actions">
+                    <li>
+                      <a
+                        id="form-step-previous-2"
+                        class="button primary"
+                        data-previous
+                        >Previous step</a
+                      >
+                    </li>
+                    <li>
+                      <a id="form-step-next-4" class="button primary" data-next
+                        >Next step</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="group group--active" data-step="4">
               <div class="row gtr-uniform">
                 <div class="col-6 col-12-xsmall">
                   <input
@@ -375,187 +555,6 @@
                     placeholder="Email address"
                     required
                   />
-                </div>
-
-                <div class="col-12">
-                  <ul class="actions">
-                    <li></li>
-                    <li>
-                      <a id="form-step-next-2" class="button primary" data-next
-                        >Next step</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="group" data-step="2">
-              <div class="row gtr-uniform">
-                <div class="col-6 col-12-xsmall">
-                  <div class="row gtr-uniform">
-                    <div class="col-12">
-                      <select
-                        name="data-format-input"
-                        id="data-format-input"
-                        required
-                      >
-                        <option value="" hidden>Input data format</option>
-                        <option value="pdf">PDF</option>
-                        <option value="image">Image (jpeg, png, ...)</option>
-                        <option value="paper">Paper</option>
-                        <option value="other">Other</option>
-                      </select>
-                    </div>
-                    <div class="col-12">
-                      <input
-                        type="text"
-                        name="data-format-input-other"
-                        placeholder="Data format"
-                        data-rel="data-format-input"
-                        data-visible-when="other"
-                        data-required="true"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-12-xsmall">
-                  <div class="row gtr-uniform">
-                    <div class="col-12">
-                      <select name="data-source" id="data-source">
-                        <option value="" hidden>Data Source</option>
-                        <option value="web">Web Interface</option>
-                        <option value="ftp">(s)FTP</option>
-                        <option value="webhooks">Webhooks</option>
-                        <option value="api">API</option>
-                        <option value="other">Other</option>
-                      </select>
-                    </div>
-                    <div class="col-12">
-                      <input
-                        type="text"
-                        name="data-source-other"
-                        placeholder="Data source"
-                        data-rel="data-source"
-                        data-visible-when="other"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <ul class="actions">
-                    <li>
-                      <a
-                        id="form-step-previous-1"
-                        class="button primary"
-                        data-previous
-                        >Previous step</a
-                      >
-                    </li>
-                    <li>
-                      <a id="form-step-next-3" class="button primary" data-next
-                        >Next step</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="group" data-step="3">
-              <div class="row gtr-uniform">
-                <div class="col-6 col-12-xsmall">
-                  <div class="row gtr-uniform">
-                    <div class="col-12">
-                      <select
-                        name="data-format-output"
-                        id="data-format-output"
-                        required
-                      >
-                        <option value="" hidden>Output data format</option>
-                        <option value="json">JSON</option>
-                        <option value="xml">XML</option>
-                        <option value="csv">CSV</option>
-                        <option value="tsv">TSV</option>
-                        <option value="x-rechnung">XRechnung</option>
-                        <option value="integration"
-                          >Third-Party integration</option
-                        >
-                        <option value="physical">Physical media</option>
-                        <option value="other">Other</option>
-                      </select>
-                    </div>
-                    <div class="col-12">
-                      <input
-                        type="text"
-                        name="data-format-output-other"
-                        placeholder="Data format"
-                        data-rel="data-format-output"
-                        data-visible-when="other"
-                        data-required="true"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-12-xsmall">
-                  <div class="row gtr-uniform">
-                    <div class="col-12">
-                      <select name="integration" id="integration">
-                        <option value="" hidden>Integration</option>
-                        <option value="sap">SAP</option>
-                        <option value="sage">Sage ERP</option>
-                        <option value="outright">Outright</option>
-                        <option value="netsuite">NetSuite</option>
-                        <option value="microsoft-dynamics"
-                          >Microsoft Dynamics</option
-                        >
-                        <option value="other">Other</option>
-                      </select>
-                    </div>
-                    <div class="col-12">
-                      <input
-                        type="text"
-                        name="integration-other"
-                        placeholder="Integration name"
-                        data-rel="integration"
-                        data-visible-when="other"
-                        data-required="true"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <ul class="actions">
-                    <li>
-                      <a
-                        id="form-step-previous-2"
-                        class="button primary"
-                        data-previous
-                        >Previous step</a
-                      >
-                    </li>
-                    <li>
-                      <a id="form-step-next-4" class="button primary" data-next
-                        >Next step</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="group" data-step="4">
-              <div class="row gtr-uniform">
-                <div class="col-6 col-12-xsmall">
-                  <select name="expected-volume" required>
-                    <option value="" hidden>Expected volume</option>
-                    <option value="0-1000">0-1,000</option>
-                    <option value="1000-5000">1,000-5,000</option>
-                    <option value="5000-15000">5,000-15,000</option>
-                    <option value="15000">> 15,000</option>
-                    <option value="unsure">Not sure</option>
-                  </select>
                 </div>
 
                 <div class="col-12">
