@@ -7,6 +7,7 @@
     this.currentStep = 1;
     this.initButtonEvents();
     this.initFieldEvents();
+    this.initSubmitEvent();
     this.updateFieldVisibility();
   };
 
@@ -23,6 +24,16 @@
 
     $fields.change(this.updateFieldVisibility.bind(this));
   };
+
+  MultiStepForm.prototype.initSubmitEvent = function() {
+    this.$form.on("submit", function(ev) {
+      ev.preventDefault();
+
+      // TODO: implement async form submit
+      // show thank you group
+      this.showNextGroup();
+    })
+  }
 
   MultiStepForm.prototype.showNextGroup = function() {
     if (!this.checkFormGroupValidity()) {
