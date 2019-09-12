@@ -1,4 +1,8 @@
 form {
+  label {
+    margin-bottom: 0.5rem;
+  }
+  
   &.multi-step-form--hidden {
     display: none;
   }

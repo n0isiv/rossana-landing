@@ -360,14 +360,13 @@
                 <div class="col-6 col-12-xsmall">
                   <div class="row gtr-uniform">
                     <div class="col-12">
+                      <label for="data-format-input">In which format is your data?</label>
                       <select
                         name="data-format-input"
                         id="data-format-input"
                         required
                       >
-                        <option value="" hidden
-                          >In which format is your data?</option
-                        >
+                        <option value="" hidden>Please choose</option>
                         <option value="pdf">PDF</option>
                         <option value="image">Image (jpeg, png, ...)</option>
                         <option value="paper">Paper</option>
@@ -375,10 +374,12 @@
                       </select>
                     </div>
                     <div class="col-12">
+                      <label for="data-format-input-other">Please describe your data format:</label>
                       <input
                         type="text"
+                        id="data-format-input-other"
                         name="data-format-input-other"
-                        placeholder="Please describe your data format"
+                        placeholder="Custom data format"
                         data-rel="data-format-input"
                         data-visible-when="other"
                         data-required="true"
@@ -389,10 +390,9 @@
                 <div class="col-6 col-12-xsmall">
                   <div class="row gtr-uniform">
                     <div class="col-12">
+                      <label for="data-source">How will you transmit the documents?</label>
                       <select name="data-source" id="data-source">
-                        <option value="" hidden
-                          >How will you transmit the documents?</option
-                        >
+                        <option value="" hidden>Please choose</option>
                         <option value="web">Web Interface</option>
                         <option value="ftp">(s)FTP</option>
                         <option value="webhooks">Webhooks</option>
@@ -401,10 +401,11 @@
                       </select>
                     </div>
                     <div class="col-12">
+                      <label for="data-source-other">Please describe your data source:</label>
                       <input
                         type="text"
                         name="data-source-other"
-                        placeholder="Please describe your data source"
+                        placeholder="Custom data source"
                         data-rel="data-source"
                         data-visible-when="other"
                       />
@@ -429,15 +430,15 @@
                 <div class="col-6 col-12-xsmall">
                   <div class="row gtr-uniform">
                     <div class="col-12">
+                      <label for="data-format-output">
+                        In which format do you want to receive your data?
+                      </label>
                       <select
                         name="data-format-output"
                         id="data-format-output"
                         required
                       >
-                        <option value="" hidden
-                          >In which format do you want to receive your
-                          data?</option
-                        >
+                        <option value="" hidden>Please choose</option>
                         <option value="json">JSON</option>
                         <option value="xml">XML</option>
                         <option value="csv">CSV</option>
@@ -451,10 +452,14 @@
                       </select>
                     </div>
                     <div class="col-12">
+                      <label for="data-format-output-other">
+                        Please describe your output data format:
+                      </label>
                       <input
                         type="text"
+                        id="data-format-output-other"
                         name="data-format-output-other"
-                        placeholder="Please describe your output format"
+                        placeholder="Custom output format"
                         data-rel="data-format-output"
                         data-visible-when="other"
                         data-required="true"
@@ -465,10 +470,9 @@
                 <div class="col-6 col-12-xsmall">
                   <div class="row gtr-uniform">
                     <div class="col-12">
+                      <label for="integration">Which integration do you want to use?</label>
                       <select name="integration" id="integration">
-                        <option value="" hidden
-                          >Which integration do you want to use?</option
-                        >
+                        <option value="" hidden>Please choose</option>
                         <option value="sap">SAP</option>
                         <option value="sage">Sage ERP</option>
                         <option value="outright">Outright</option>
@@ -480,10 +484,12 @@
                       </select>
                     </div>
                     <div class="col-12">
+                      <label for="integration-other">Integration name:</label>
                       <input
                         type="text"
+                        id="integration-other"
                         name="integration-other"
-                        placeholder="Integration name"
+                        placeholder="SevDesk, Datev, ..."
                         data-rel="integration"
                         data-visible-when="other"
                         data-required="true"
@@ -515,11 +521,9 @@
             <div class="group" data-step="3">
               <div class="row gtr-uniform">
                 <div class="col-6 col-12-xsmall">
-                  <select name="expected-volume" required>
-                    <option value="" hidden
-                      >How many documents do you want to process per
-                      month?</option
-                    >
+                  <label for="expected-volume">How many documents do you want to process per month?</label>
+                  <select id="expected-volume" name="expected-volume" required>
+                    <option value="" hidden>Please choose</option>
                     <option value="0-1000">0-1,000</option>
                     <option value="1000-5000">1,000-5,000</option>
                     <option value="5000-15000">5,000-15,000</option>
@@ -551,6 +555,7 @@
             <div class="group" data-step="4">
               <div class="row gtr-uniform">
                 <div class="col-6 col-12-xsmall">
+                  <label for="first-name">First name:</label>
                   <input
                     type="text"
                     name="first-name"
@@ -560,6 +565,7 @@
                   />
                 </div>
                 <div class="col-6 col-12-xsmall">
+                  <label for="last-name">Last name:</label>
                   <input
                     type="text"
                     name="last-name"
@@ -569,6 +575,7 @@
                   />
                 </div>
                 <div class="col-6 col-12-xsmall">
+                  <label for="company-name">Company name:</label>
                   <input
                     type="text"
                     name="company-name"
@@ -577,6 +584,7 @@
                   />
                 </div>
                 <div class="col-6 col-12-xsmall">
+                  <label for="email">Email address:</label>
                   <input
                     type="email"
                     name="email"
