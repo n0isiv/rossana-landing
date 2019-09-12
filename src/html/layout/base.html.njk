@@ -1,0 +1,80 @@
+{% import "i18n/" + lang + ".njk" as t %}
+<!DOCTYPE html>
+<!-- Visualize by Pixelarity pixelarity.com | hello@pixelarity.com License: pixelarity.com/license -->
+<html>
+  <head>
+    <title>Untitled</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="stylesheet" href="../../assets/sass/main.scss"/>
+    <link rel="stylesheet" href="../../node_modules/cookieconsent/build/cookieconsent.min.css"/>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({"gtm.start": new Date().getTime(), event: "gtm.js"});
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer"
+            ? "&l=" + l
+            : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f
+          .parentNode
+          .insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MPBPVWW");
+    </script>
+  </head>
+  <body class="is-preload">
+    <noscript >
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPBPVWW" height="0" width="0" style="display:none;visibility:hidden"></iframe >
+    </noscript>
+    <!-- Header -->
+    <header id="header" class="alt">
+      {# <a class="logo" href="index.html"><span>AGENION</span></a> #}
+      <nav>
+        <a href="#menu">
+          <span class="label">Menu</span></a>
+      </nav>
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+      <ul class="links">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        {# <li><a href="generic.html">Generic</a></li>
+        <li><a href="elements.html">Elements</a></li> #}
+      </ul>
+    </nav>
+
+    {% block body %}{% endblock body %}
+
+    {# Footer #}
+    <div id="footer">
+      <div class="wrapper">
+        <div class="inner">
+          <div class="copyright">
+            &copy; Untitled Corp. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="../index.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-147336875-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-147336875-1");
+    </script>
+  </body>
+</html>

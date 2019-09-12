@@ -4,7 +4,9 @@
   "description": "Landing page of the agenion project",
   "main": "serve.js",
   "scripts": {
-    "serve": "parcel index.html"
+    "serve": "parcel src/html/index.html.njk",
+    "build": "I18N_LANGUAGE=en parcel build src/html/index.html.njk",
+    "build:de": "I18N_LANGUAGE=de parcel build src/html/index.html.njk"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,8 @@
     "sass": "^1.22.10"
   },
   "dependencies": {
-    "cookieconsent": "^3.1.1"
+    "cookieconsent": "^3.1.1",
+    "nunjucks": "^3.2.0",
+    "parcel-plugin-nunjucks": "^2.1.1"
   }
 }
