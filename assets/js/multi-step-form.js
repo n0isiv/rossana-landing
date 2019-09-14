@@ -29,10 +29,17 @@
     this.$form.on("submit", function(ev) {
       ev.preventDefault();
 
-      // TODO: implement async form submit
-      // show thank you group
-      this.showNextGroup();
-    })
+      // TODO: implement error handling
+      $.ajax({
+        type: "POST",
+        url: "#",
+        data: this.$form.serialize(),
+        success: function() {
+          // show thank you group
+          this.showNextGroup();
+        },
+      })
+    }.bind(this))
   }
 
   MultiStepForm.prototype.showNextGroup = function() {
