@@ -2,8 +2,12 @@
       <div class="wrapper style1">
         <div class="inner">
           <header class="heading small">
-            <h2>Sign up</h2>
+            <h2>{{ t.sign_up }}</h2>
           </header>
+          
+          <div class="text-center">
+            <p>Registration is easy. No credit card required.</p>
+          </div>
 
           <ul class="actions actions--center">
             <li>
@@ -12,7 +16,7 @@
                 class="button large special quote-button"
                 data-hide-after-click="true"
               >
-                Get your quote
+                {{ t.start_sign_up }}
               </button>
             </li>
           </ul>
@@ -27,25 +31,25 @@
               <div class="step step--completed" data-step="1">
                 <p class="step-number">1</p>
                 <p class="step-description">
-                  Input
+                  {{ t.input }}
                 </p>
               </div>
               <div class="step" data-step="2">
                 <p class="step-number">2</p>
                 <p class="step-description">
-                  Output
+                  {{ t.output }}
                 </p>
               </div>
               <div class="step" data-step="3">
                 <p class="step-number">3</p>
                 <p class="step-description">
-                  Volume
+                  {{ t.volume }}
                 </p>
               </div>
               <div class="step" data-step="4">
                 <p class="step-number">4</p>
                 <p class="step-description">
-                  Contact
+                  {{ t.contact }}
                 </p>
               </div>
             </div>
@@ -55,13 +59,13 @@
                 <div class="col-6 col-12-xsmall">
                   <div class="row gtr-uniform">
                     <div class="col-12">
-                      <label for="data-format-input">In which format is your data?</label>
+                      <label for="data-format-input">{{ t.data_format_label }}</label>
                       <select
                         name="data-format-input"
                         id="data-format-input"
                         required
                       >
-                        <option value="" hidden>Please choose</option>
+                        <option value="" hidden>{{ t.please_choose }}</option>
                         <option value="pdf">PDF</option>
                         <option value="image">Image (jpeg, png, ...)</option>
                         <option value="paper">Paper</option>
@@ -69,12 +73,12 @@
                       </select>
                     </div>
                     <div class="col-12">
-                      <label for="data-format-input-other">Please describe your data format:</label>
+                      <label for="data-format-input-other">{{ t.data_format_other_label }}</label>
                       <input
                         type="text"
                         id="data-format-input-other"
                         name="data-format-input-other"
-                        placeholder="Custom data format"
+                        placeholder="{{ t.data_format_other_placeholder }}"
                         data-rel="data-format-input"
                         data-visible-when="other"
                         data-required="true"
@@ -85,9 +89,9 @@
                 <div class="col-6 col-12-xsmall">
                   <div class="row gtr-uniform">
                     <div class="col-12">
-                      <label for="data-source">How will you transmit the documents?</label>
+                      <label for="data-source">{{ t.data_source_label }}</label>
                       <select name="data-source" id="data-source">
-                        <option value="" hidden>Please choose</option>
+                        <option value="" hidden>{{ t.please_choose }}</option>
                         <option value="web">Web Interface</option>
                         <option value="ftp">(s)FTP</option>
                         <option value="webhooks">Webhooks</option>
@@ -96,11 +100,11 @@
                       </select>
                     </div>
                     <div class="col-12">
-                      <label for="data-source-other">Please describe your data source:</label>
+                      <label for="data-source-other">{{ t.data_source_other_label }}</label>
                       <input
                         type="text"
                         name="data-source-other"
-                        placeholder="Custom data source"
+                        placeholder="{{ t.data_source_other_placeholder }}"
                         data-rel="data-source"
                         data-visible-when="other"
                       />
@@ -112,7 +116,7 @@
                     <li></li>
                     <li>
                       <a id="form-step-next-3" class="button primary" data-next
-                        >Next step</a
+                        >{{ t.next_step }}</a
                       >
                     </li>
                   </ul>
@@ -126,14 +130,14 @@
                   <div class="row gtr-uniform">
                     <div class="col-12">
                       <label for="data-format-output">
-                        In which format do you want to receive your data?
+                        {{ t.data_output_label }}
                       </label>
                       <select
                         name="data-format-output"
                         id="data-format-output"
                         required
                       >
-                        <option value="" hidden>Please choose</option>
+                        <option value="" hidden>{{ t.please_choose }}</option>
                         <option value="json">JSON</option>
                         <option value="xml">XML</option>
                         <option value="csv">CSV</option>
@@ -148,13 +152,13 @@
                     </div>
                     <div class="col-12">
                       <label for="data-format-output-other">
-                        Please describe your output data format:
+                        {{ t.data_output_other_label }}
                       </label>
                       <input
                         type="text"
                         id="data-format-output-other"
                         name="data-format-output-other"
-                        placeholder="Custom output format"
+                        placeholder="{{ t.data_output_other_placeholder }}"
                         data-rel="data-format-output"
                         data-visible-when="other"
                         data-required="true"
@@ -165,9 +169,9 @@
                 <div class="col-6 col-12-xsmall">
                   <div class="row gtr-uniform">
                     <div class="col-12">
-                      <label for="integration">Which integration do you want to use?</label>
+                      <label for="integration">{{ t.data_integration_label }}</label>
                       <select name="integration" id="integration">
-                        <option value="" hidden>Please choose</option>
+                        <option value="" hidden>{{ t.please_choose }}</option>
                         <option value="sap">SAP</option>
                         <option value="sage">Sage ERP</option>
                         <option value="outright">Outright</option>
@@ -179,12 +183,12 @@
                       </select>
                     </div>
                     <div class="col-12">
-                      <label for="integration-other">Integration name:</label>
+                      <label for="integration-other">{{ t.data_integration_other_label }}</label>
                       <input
                         type="text"
                         id="integration-other"
                         name="integration-other"
-                        placeholder="SevDesk, Datev, ..."
+                        placeholder="{{ t.data_integration_other_placeholder }}"
                         data-rel="integration"
                         data-visible-when="other"
                         data-required="true"
@@ -200,12 +204,12 @@
                         id="form-step-previous-1"
                         class="button primary"
                         data-previous
-                        >Previous step</a
+                        >{{ t.previous_step }}</a
                       >
                     </li>
                     <li>
                       <a id="form-step-next-3" class="button primary" data-next
-                        >Next step</a
+                        >{{ t.next_step }}</a
                       >
                     </li>
                   </ul>
@@ -216,9 +220,9 @@
             <div class="group" data-step="3">
               <div class="row gtr-uniform">
                 <div class="col-6 col-12-xsmall">
-                  <label for="expected-volume">How many documents do you want to process per month?</label>
+                  <label for="expected-volume">{{ t.data_volume_label }}</label>
                   <select id="expected-volume" name="expected-volume" required>
-                    <option value="" hidden>Please choose</option>
+                    <option value="" hidden>{{ t.please_choose }}</option>
                     <option value="0-1000">0-1,000</option>
                     <option value="1000-5000">1,000-5,000</option>
                     <option value="5000-15000">5,000-15,000</option>
@@ -234,12 +238,12 @@
                         id="form-step-previous-2"
                         class="button primary"
                         data-previous
-                        >Previous step</a
+                        >{{ t.previous_step }}</a
                       >
                     </li>
                     <li>
                       <a id="form-step-next-4" class="button primary" data-next
-                        >Next step</a
+                        >{{ t.next_step }}</a
                       >
                     </li>
                   </ul>
@@ -250,41 +254,41 @@
             <div class="group" data-step="4">
               <div class="row gtr-uniform">
                 <div class="col-6 col-12-xsmall">
-                  <label for="first-name">First name:</label>
+                  <label for="first-name">{{ t.first_name }}:</label>
                   <input
                     type="text"
                     name="first-name"
                     id="first-name"
-                    placeholder="First name"
+                    placeholder="{{ t.first_name }}"
                     required
                   />
                 </div>
                 <div class="col-6 col-12-xsmall">
-                  <label for="last-name">Last name:</label>
+                  <label for="last-name">{{ t.last_name }}:</label>
                   <input
                     type="text"
                     name="last-name"
                     id="last-name"
-                    placeholder="Last name"
+                    placeholder="{{ t.last_name }}"
                     required
                   />
                 </div>
                 <div class="col-6 col-12-xsmall">
-                  <label for="company-name">Company name:</label>
+                  <label for="company-name">{{ t.company }}:</label>
                   <input
                     type="text"
                     name="company-name"
                     id="company-name"
-                    placeholder="Company name"
+                    placeholder="{{ t.company_name }}"
                   />
                 </div>
                 <div class="col-6 col-12-xsmall">
-                  <label for="email">Email address:</label>
+                  <label for="email">{{ t.email }}:</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
-                    placeholder="Email address"
+                    placeholder="{{ t.email }}"
                     required
                   />
                 </div>
@@ -296,7 +300,7 @@
                         id="form-step-previous-3"
                         class="button primary"
                         data-previous
-                        >Previous step</a
+                        >{{ t.previous_step }}</a
                       >
                     </li>
                     <li>
@@ -306,14 +310,12 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="group group--content" data-step="5">
-              <h2>Thanks for your interrest.</h2>
+              <h2>{{ t.thank_you_heading }}</h2>
 
               <p>
-                We are very pleased that you are interested in our application but our service is unfortunately not yet available.
-                Don't worry, we will keep you informed about our progress and send you an offer as soon as we are ready.
-                In the meantime, please confirm the link in the email we sent you.
+                {{ t.thank_you_copy }}
               </p>
             </div>
           </form>
