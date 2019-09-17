@@ -32,12 +32,12 @@
       // TODO: implement error handling
       $.ajax({
         type: "POST",
-        url: "#",
+        url: "https://hook.integromat.com/9hftr9xe3igebdnk7l43oi33ay9mdxam",
         data: this.$form.serialize(),
         success: function() {
           // show thank you group
           this.showNextGroup();
-        },
+        }.bind(this),
       })
     }.bind(this))
   }
