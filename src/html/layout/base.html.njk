@@ -3,7 +3,7 @@
 <!-- Visualize by Pixelarity pixelarity.com | hello@pixelarity.com License: pixelarity.com/license -->
 <html>
   <head>
-    <title>Agenion</title>
+    <title>{{ t.title }}</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <meta name="description" content=""/>
@@ -43,7 +43,7 @@
       <div class="wrapper">
         <div class="inner">
           <div class="copyright">
-            &copy; Untitled Corp. All rights reserved.
+            {{ t.footer|safe }}
           </div>
         </div>
       </div>

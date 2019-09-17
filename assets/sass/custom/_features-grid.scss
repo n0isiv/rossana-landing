@@ -1,6 +1,6 @@
 .features-grid {
   width: auto;
-  margin: 0;
+  margin: 0 auto;
 
   .feature {
     @include vendor('justify-content','start');
@@ -15,8 +15,8 @@
     box-shadow: none;
     background: none;
     margin-top: calc(-13rem - 1px);
-    margin-left: calc(2rem - 10px);
-    margin-right: calc(2rem - 10px);
+    margin-left: auto;
+    margin-right: auto;
     
     .feature {
       background: white;
