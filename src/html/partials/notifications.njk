@@ -1,10 +1,48 @@
 <div class="notifications">
-  <div class="notification notification--error">
+  <div
+    class="notification notification--error"
+    data-type="email-already-exists"
+  >
     <p class="notification__message">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
+      {{ t.emailAlreadyExistsError }}
     </p>
-    
+
+    <a class="notification__close" href="#">
+      <span class="notification__icon icon solid fa-times"></span>
+    </a>
+  </div>
+
+  <div
+    class="notification notification--error"
+    data-type="email-does-not-exists"
+  >
+    <p class="notification__message">
+      {{ t.emailDoesNotExistError }}
+    </p>
+
+    <a class="notification__close" href="#">
+      <span class="notification__icon icon solid fa-times"></span>
+    </a>
+  </div>
+
+  <div
+    class="notification notification--error"
+    data-type="email-already-confirmed"
+  >
+    <p class="notification__message">
+      {{ t.emailAlreadyConfirmedError }}
+    </p>
+
+    <a class="notification__close" href="#">
+      <span class="notification__icon icon solid fa-times"></span>
+    </a>
+  </div>
+
+  <div class="notification notification--info" data-type="email-confirmed">
+    <p class="notification__message">
+      {{ t.emailConfirmedInfo }}
+    </p>
+
     <a class="notification__close" href="#">
       <span class="notification__icon icon solid fa-times"></span>
     </a>
