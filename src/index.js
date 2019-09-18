@@ -11,3 +11,4 @@ require("../assets/js/main.js");
 require("../assets/js/typewriter.js");
 require("../assets/js/multi-step-form.js");
 require("../assets/js/quote-buttons.js");
+require("../assets/js/notifications.js");
