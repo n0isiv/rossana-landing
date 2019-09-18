@@ -1,0 +1,30 @@
+.notifications {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+
+  .notification {
+    @include vendor("display", "flex");
+    @include vendor("justify-content", "space-between");
+    padding: 0.5rem 1.25rem;
+  }
+
+  .notification--error {
+    background-color: #f44336;
+    color: #ffffff; 
+  }
+
+  .notification__message {
+    margin-bottom: 0;
+  }
+
+  .notification__close {
+    margin-left: 1rem;
+    padding: 5px;
+    color: #ffffff;
+  }
+
+  .notification__icon {
+    font-size: 20px;
+  }
+}
