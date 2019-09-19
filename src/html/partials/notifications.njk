@@ -1,5 +1,6 @@
 <div class="notifications">
   <div
+    id="email-already-exists-notification"
     class="notification notification--error"
     data-type="email-already-exists"
   >
@@ -13,6 +14,7 @@
   </div>
 
   <div
+    id="email-does-not-exist-notification"
     class="notification notification--error"
     data-type="email-does-not-exist"
   >
@@ -26,6 +28,7 @@
   </div>
 
   <div
+    id="email-already-confirmed-notification"
     class="notification notification--error"
     data-type="email-already-confirmed"
   >
@@ -38,7 +41,7 @@
     </a>
   </div>
 
-  <div class="notification notification--info" data-type="email-confirmed">
+  <div id="email-confirmed-notification" class="notification notification--info" data-type="email-confirmed">
     <p class="notification__message">
       {{ t.emailConfirmedInfo }}
     </p>
