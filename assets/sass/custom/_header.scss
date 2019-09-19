@@ -6,4 +6,9 @@
     .logo span {
         display: inline;
     }
+    
+    &.header--bg {
+      background: linear-gradient(45deg, #57d9bf 0%, #57d9bf 50%, #46d5b9 50%, #46d5b9 100%);
+    }
 }
+
