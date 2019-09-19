@@ -100,13 +100,14 @@
                       </select>
                     </div>
                     <div class="col-12">
-                      <label for="data-source-other">{{ t.data_source_other_label }}</label>
+                      <label for="data-source-other">{{ t.data_source_other_label }}*</label>
                       <input
                         type="text"
                         name="data-source-other"
                         placeholder="{{ t.data_source_other_placeholder }}"
                         data-rel="data-source"
                         data-visible-when="other"
+                        data-required="true"
                       />
                     </div>
                   </div>
