@@ -4,9 +4,9 @@
   "description": "Landing page of the agenion project",
   "main": "serve.js",
   "scripts": {
-    "serve": "parcel src/html/index.html.njk",
-    "build": "I18N_LANGUAGE=en parcel build src/html/index.html.njk",
-    "build:de": "I18N_LANGUAGE=de parcel build src/html/index.html.njk"
+    "serve": "parcel src/html/index.njk",
+    "build": "I18N_LANGUAGE=en parcel build -d public src/html/index.njk",
+    "build:de": "I18N_LANGUAGE=de parcel build -d public/de --public-url /de src/html/index.njk"
   },
   "repository": {
     "type": "git",
