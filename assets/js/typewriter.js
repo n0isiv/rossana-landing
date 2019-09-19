@@ -53,8 +53,9 @@ TypewriterAnimation.prototype.animate = function() {
     for (var i = 0; i < $typewriterElms.length; i++) {
       var $typewriterElm = $($typewriterElms[i]);
       var rotatingText = $typewriterElm.data("rotate");
-
-      new TypewriterAnimation($typewriterElm, rotatingText);
+      
+      
+      new TypewriterAnimation($typewriterElm.find('.typewriter'), rotatingText);
     }
   });
 })(jQuery);

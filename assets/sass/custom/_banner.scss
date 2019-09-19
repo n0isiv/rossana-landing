@@ -1,13 +1,15 @@
 #banner h1 {
     height: 4.25rem;
-    max-width: 0;
     line-height: 4.25rem;
-    transition: max-width 200ms linear;
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 5px solid #fff;
-    padding-right: 10px;
+    .typewriter {
+      max-width: 0;
+      transition: max-width 200ms linear;
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 5px solid #fff;
+      padding-right: 10px;
+    }
 }
 
 @keyframes animated-cursor{

@@ -2,7 +2,10 @@
   <div class="wrapper style1">
     <div class="inner">
       <p>{{ t.banner_title }}</p>
-      <h1 class="typewriter-animation" data-rotate='["{{ t.invoices }}", "{{ t.tax_assesments }}", "{{ t.legal_documents }}"]'></h1>
+      <h1 class="typewriter-animation" data-rotate='["{{ t.invoices }}", "{{ t.tax_assesments }}", "{{ t.legal_documents }}"]'>
+        <span class="typewriter" aria-live="off"></span>
+        <span class="visually-hidden">Automatic Data Extraction for "{{ t.invoices }}", "{{ t.tax_assesments }}", "{{ t.legal_documents }}"</span>
+      </h1>
       <ul class="actions special">
         <li>
           <a id="form-link" href="#quote" class="button large primary scrolly">{{ t.banner_cta }}</a >
