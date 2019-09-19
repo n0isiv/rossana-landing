@@ -6,8 +6,8 @@
     <title>{{ t.title }}</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <meta name="description" content=""/>
-    <meta name="keywords" content=""/>
+    <meta name="description" content="{{t.metaDescription}}"/>
+    <meta name="keywords" content="{{t.metaKeywords}}"/>
     <link rel="stylesheet" href="../../assets/sass/main.scss"/>
     <link rel="stylesheet" href="../../node_modules/cookieconsent/build/cookieconsent.min.css"/>
   </head>
@@ -16,7 +16,7 @@
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPBPVWW" height="0" width="0" style="display:none;visibility:hidden"></iframe >
     </noscript>
     <!-- Header -->
-    <header id="header" class="alt">
+    <header id="header" class="alt {% block headerClass %}{% endblock headerClass %}">
       <a class="logo" href="/"><span>AGENION</span></a>
     </header>
 
@@ -26,9 +26,16 @@
     <div id="footer">
       <div class="wrapper">
         <div class="inner">
+          <div class="links">
+            <a href="/about.njk">About</a>
+          </div>
+           <div class="links">
+            <a href="/privacy.njk">Privacy</a>
+          </div>
           <div class="copyright">
             {{ t.footer|safe }}
           </div>
+          
         </div>
       </div>
     </div>
